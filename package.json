@@ -6,13 +6,19 @@
     "tsc:w": "tsc -w"
   },
   "dependencies": {
-    "@types/chrome": "^0.0.38",
-    "@types/node": "^7.0.0",
-    "@types/underscore": "^1.7.36",
-    "systemjs": "^0.19.41",
-    "underscore": "^1.8.3"
+    "@types/chrome": "^0.0.38"
   },
   "devDependencies": {
-    "typescript": "^2.1.5"
+    "browserify": "^13.3.0",
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^2.4.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.8",
+    "run-sequence": "^1.2.2",
+    "tsify": "^3.0.0",
+    "typescript": "^2.1.5",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.8.0"
   }
 }

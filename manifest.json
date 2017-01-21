@@ -9,17 +9,18 @@
         "64": "images/icon-64.png",
         "128": "images/icon-128.png"
     },
+    "permissions": [
+        "*://*.trello.com/*"
+    ],
     "content_scripts": [
         {
             "matches": [
                 "*://*.trello.com/*"
             ],
             "js": [
-                "node_modules/systemjs/dist/system.src.js",
-                "systemjs.config.js"
+                "dist/bundle.js"
             ],
-            "run_at": "document_idle",
-            "all_frames": false
+            "run_at": "document_end"
         }
     ],
     "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
