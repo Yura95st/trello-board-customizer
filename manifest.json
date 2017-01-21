@@ -1,0 +1,27 @@
+{
+    "name": "Trello Board Customizer",
+    "description": "Customize your Trello boards.",
+    "version": "2.0.0",
+    "offline_enabled": true,
+    "icons": {
+        "32": "images/icon-32.png",
+        "48": "images/icon-48.png",
+        "64": "images/icon-64.png",
+        "128": "images/icon-128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.trello.com/*"
+            ],
+            "js": [
+                "node_modules/systemjs/dist/system.src.js",
+                "systemjs.config.js"
+            ],
+            "run_at": "document_idle",
+            "all_frames": false
+        }
+    ],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "manifest_version": 2
+}
