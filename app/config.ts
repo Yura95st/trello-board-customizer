@@ -6,4 +6,6 @@ export class Config {
     static readonly styleContainerId = "trello-board-cutomizer-style";
 
     static readonly boardIdRegExp = /:\/\/trello.com\/b\/([a-zA-Z0-9]*)\//g;
+
+    static readonly cardIdRegExp = /:\/\/trello.com\/c\/([a-zA-Z0-9]*)\//g;
 }

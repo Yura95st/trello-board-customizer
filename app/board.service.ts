@@ -1,7 +1,7 @@
 import { BoardConfig } from './board-config';
 export class BoardService {
     constructor(private boardConfigStringRegExp: RegExp, private cardContentXPath: string,
-        private boardIdRegExp: RegExp) {
+        private boardIdRegExp: RegExp, private cardIdRegExp: RegExp) {
     }
 
     getBoardConfig(): BoardConfig {
@@ -30,6 +30,12 @@ export class BoardService {
 
         return regExp.test(url);
     }
+
+    isCardUrl(url: string): boolean {
+        let regExp = new RegExp(this.cardIdRegExp);
+
+        return regExp.test(url);
+    }    
 
     private getCardsContent(): string[] {
         let content = [];
