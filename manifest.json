@@ -17,7 +17,7 @@
                 "*://*.trello.com/*"
             ],
             "js": [
-                "dist/bundle.js"
+                "bundle.js"
             ],
             "run_at": "document_end"
         }

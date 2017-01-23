@@ -2,14 +2,14 @@
   "name": "trello-board-customizer",
   "version": "2.0.0",
   "scripts": {
-    "tsc": "tsc",
-    "tsc:w": "tsc -w"
+    "gulp": "gulp"
   },
   "dependencies": {
     "@types/chrome": "^0.0.38"
   },
   "devDependencies": {
     "browserify": "^13.3.0",
+    "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-sourcemaps": "^2.4.0",
     "gulp-uglify": "^2.0.0",
@@ -18,7 +18,6 @@
     "tsify": "^3.0.0",
     "typescript": "^2.1.5",
     "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0",
-    "watchify": "^3.8.0"
+    "vinyl-source-stream": "^1.1.0"
   }
 }
