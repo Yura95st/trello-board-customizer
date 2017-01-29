@@ -6,7 +6,7 @@ Installation
 -----
 
 - `$ npm install`
-- `$ gulp`
+- `$ npm run gulp`
 - Go to `chrome://extensions/` tab.
 - Enable the developer mode at top right.
 - Click `Load unpacked extension...` and select the `dist` folder.
